@@ -1,0 +1,55 @@
+.chapter-indicator {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+  animation: fadeIn 0.5s ease;
+}
+
+.chapter-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+}
+
+.chapter-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.1rem, 4vw, 1.4rem);
+  color: var(--text-light);
+  margin-top: 0.2rem;
+}
+
+.emotion-indicator {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(30, 30, 50, 0.9);
+  border: 1px solid rgba(233, 69, 96, 0.3);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  z-index: 100;
+  animation: fadeIn 0.5s ease;
+}
+
+.emotion-label {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+.emotion-bar {
+  width: 85px;
+  height: 6px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.emotion-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-warm), var(--accent-gold));
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}

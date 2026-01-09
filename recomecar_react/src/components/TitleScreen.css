@@ -1,0 +1,31 @@
+.title-screen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, #1a1a2e 0%, #0f0f23 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 1s ease;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+  letter-spacing: 0.2em;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  animation: titleGlow 3s ease-in-out infinite;
+}
+
+.subtitle {
+  font-size: clamp(0.8rem, 3vw, 1.1rem);
+  color: var(--text-muted);
+  letter-spacing: 0.5em;
+  margin-bottom: 3rem;
+}
+
+.start-btn {
+  animation: fadeIn 1s ease 0.5s both;
+}

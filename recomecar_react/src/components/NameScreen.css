@@ -1,0 +1,43 @@
+.name-screen {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 35, 0.98);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.name-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.name-input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--accent-warm);
+  padding: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3rem;
+  color: var(--text-light);
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+  outline: none;
+  margin-bottom: 2rem;
+  transition: border-color 0.3s ease;
+}
+
+.name-input:focus {
+  border-color: var(--accent-gold);
+}
+
+.name-input::placeholder {
+  color: var(--text-muted);
+}

@@ -1,0 +1,35 @@
+.character {
+  position: absolute;
+  width: 80px;
+  height: 160px;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  z-index: 10;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+.character-left {
+  bottom: 12%;
+  left: 18%;
+}
+
+.character-right {
+  bottom: 18%;
+  right: 18%;
+}
+
+.character.leaving {
+  animation: walkOut 2s ease-in-out forwards;
+}
+
+@keyframes walkOut {
+  0% { 
+    transform: translateX(0) translateY(0); 
+    opacity: 1; 
+  }
+  100% { 
+    transform: translateX(150px) translateY(-50px); 
+    opacity: 0; 
+  }
+}

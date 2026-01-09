@@ -1,0 +1,61 @@
+.chapter-end {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 21, 0.98);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 800;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.end-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.end-subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.end-subtitle .highlight {
+  color: var(--accent-warm);
+  font-weight: 600;
+}
+
+.stats-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat-box {
+  background: rgba(30, 30, 50, 0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 140px;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  color: var(--accent-warm);
+  font-weight: 700;
+}
